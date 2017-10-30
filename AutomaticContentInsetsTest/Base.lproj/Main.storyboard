@@ -92,18 +92,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PcH-Om-Ica">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="always" translatesAutoresizingMaskIntoConstraints="NO" id="PcH-Om-Ica">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I4j-To-xPq">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                                         <color key="backgroundColor" red="1" green="0.92658200258821588" blue="0.42951054175789893" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="B8D-DS-8zS"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="I4j-To-xPq" secondAttribute="trailing" id="Gjr-YS-rmd"/>
                                     <constraint firstAttribute="bottom" secondItem="I4j-To-xPq" secondAttribute="bottom" id="Ic4-uE-Xo9"/>
-                                    <constraint firstItem="I4j-To-xPq" firstAttribute="height" secondItem="PcH-Om-Ica" secondAttribute="height" id="LIU-z3-b2a"/>
                                     <constraint firstItem="I4j-To-xPq" firstAttribute="width" secondItem="PcH-Om-Ica" secondAttribute="width" id="Sxt-nh-n8y"/>
                                     <constraint firstItem="I4j-To-xPq" firstAttribute="leading" secondItem="PcH-Om-Ica" secondAttribute="leading" id="eci-6u-EDU"/>
                                     <constraint firstItem="I4j-To-xPq" firstAttribute="top" secondItem="PcH-Om-Ica" secondAttribute="top" id="ih3-fh-G58"/>
